@@ -1,24 +1,241 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OSw-KZ-kvo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="aboutWolves" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-nA-2ni">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Эти удивительные волки" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ne-Q5-D62">
+                                <rect key="frame" x="16" y="340.5" width="343" height="84"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf" translatesAutoresizingMaskIntoConstraints="NO" id="vPG-Fl-oEK">
+                                <rect key="frame" x="48" y="158.5" width="278" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="etn-1G-BCE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vPG-Fl-oEK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9aZ-cN-xa2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xhf-nA-2ni" secondAttribute="bottom" id="B0U-Ws-Xw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xhf-nA-2ni" secondAttribute="trailing" id="DeI-g8-G38"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Ne-Q5-D62" secondAttribute="trailing" constant="16" id="GYV-wh-fyQ"/>
+                            <constraint firstItem="vPG-Fl-oEK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="JVl-U0-gbi"/>
+                            <constraint firstItem="Xhf-nA-2ni" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jnB-99-0fL"/>
+                            <constraint firstItem="6Ne-Q5-D62" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k73-Mb-3Gt"/>
+                            <constraint firstItem="6Ne-Q5-D62" firstAttribute="top" secondItem="vPG-Fl-oEK" secondAttribute="bottom" constant="32" id="rHZ-0B-0lC"/>
+                            <constraint firstItem="Xhf-nA-2ni" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uD3-wY-a2S"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Title" image="icons8-werewolf_filled" id="O1M-5U-LTA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-535.20000000000005" y="887.40629685157433"/>
+        </scene>
+        <!--Text-->
+        <scene sceneID="uEi-y9-HYj">
+            <objects>
+                <viewController id="Vi8-to-hKX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cZI-fR-uXf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" translatesAutoresizingMaskIntoConstraints="NO" id="lDx-I9-hqr">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cY-1M-62o">
+                                <rect key="frame" x="16" y="50" width="343" height="406"/>
+                                <mutableString key="text">    Что люди знают о волках? То, что они свирепы и опасны, вероломны и коварны. Что их надо уничтожать. Так думают о волках те, кто о них ничего не знает.
+    Волки обитают на Земле уже более миллиона лет. Произошли они от плотоядных хищников, живших 100 миллионов лет назад, а около 20 миллионов лет назад от волка произошли собаки.
+    Обычно волк-самец весит около 50 килограммов, волчица – килограммов на 5 меньше. Их высота в холке – около 75 сантиметров, а длина от носа да кончика хвоста достигает 1,5 – 2 метров.
+    Каждая волчья стая охотится только на своей территории. Хозяева строго охраняют и метят ее, предупреждая соседей, что им следует держаться подальше.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fOM-Zb-C1x" firstAttribute="trailing" secondItem="5cY-1M-62o" secondAttribute="trailing" constant="16" id="5L8-aw-S2u"/>
+                            <constraint firstItem="fOM-Zb-C1x" firstAttribute="bottom" secondItem="lDx-I9-hqr" secondAttribute="bottom" id="GMS-En-odX"/>
+                            <constraint firstItem="5cY-1M-62o" firstAttribute="leading" secondItem="fOM-Zb-C1x" secondAttribute="leading" constant="16" id="Gpv-6I-KHf"/>
+                            <constraint firstItem="5cY-1M-62o" firstAttribute="top" secondItem="fOM-Zb-C1x" secondAttribute="top" constant="30" id="SEU-H7-Snr"/>
+                            <constraint firstItem="lDx-I9-hqr" firstAttribute="leading" secondItem="fOM-Zb-C1x" secondAttribute="leading" id="V89-cs-S9H"/>
+                            <constraint firstItem="lDx-I9-hqr" firstAttribute="top" secondItem="fOM-Zb-C1x" secondAttribute="top" id="r7H-9w-rvM"/>
+                            <constraint firstItem="fOM-Zb-C1x" firstAttribute="trailing" secondItem="lDx-I9-hqr" secondAttribute="trailing" id="wOr-1L-WM9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fOM-Zb-C1x"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Text" image="icons8-tails" id="LoX-sD-xUK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nul-wb-QcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="886.50674662668678"/>
+        </scene>
+        <!--Photo-->
+        <scene sceneID="qIk-Lg-yZN">
+            <objects>
+                <viewController id="lOu-9j-giA" customClass="ImagesViewController" customModule="aboutWolves" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3M5-gH-hgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Animals" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-ke-rjK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="70r-HI-nax">
+                                <rect key="frame" x="20" y="40" width="335" height="558"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZSD-Tn-N1B">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="124.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf1" translatesAutoresizingMaskIntoConstraints="NO" id="XuF-ZT-nd0">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="125"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XuF-ZT-nd0" secondAttribute="height" multiplier="300:150" id="9M8-s1-NTu"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XuF-ZT-nd0" firstAttribute="top" secondItem="ZSD-Tn-N1B" secondAttribute="top" id="YLW-sD-kwx"/>
+                                            <constraint firstAttribute="bottom" secondItem="XuF-ZT-nd0" secondAttribute="bottom" id="eKH-gh-rp6"/>
+                                            <constraint firstItem="XuF-ZT-nd0" firstAttribute="leading" secondItem="ZSD-Tn-N1B" secondAttribute="leading" id="sTJ-B1-Q3n"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dcp-ht-VCV">
+                                        <rect key="frame" x="0.0" y="144.5" width="335" height="124.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf2" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-J4-Wux">
+                                                <rect key="frame" x="86" y="0.0" width="249" height="124.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="7RW-J4-Wux" secondAttribute="height" multiplier="300:150" id="fkq-Ao-xrO"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="7RW-J4-Wux" secondAttribute="trailing" id="FPv-7A-UH1"/>
+                                            <constraint firstAttribute="bottom" secondItem="7RW-J4-Wux" secondAttribute="bottom" id="a8Y-mm-foR"/>
+                                            <constraint firstItem="7RW-J4-Wux" firstAttribute="top" secondItem="dcp-ht-VCV" secondAttribute="top" id="uaq-kY-8iO"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhN-X4-vXu">
+                                        <rect key="frame" x="0.0" y="289" width="335" height="124.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf3" translatesAutoresizingMaskIntoConstraints="NO" id="zpa-95-hVp">
+                                                <rect key="frame" x="0.0" y="0.0" width="249" height="124.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zpa-95-hVp" secondAttribute="height" multiplier="300:150" id="RPX-Mh-xeY"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zpa-95-hVp" firstAttribute="top" secondItem="BhN-X4-vXu" secondAttribute="top" id="3ph-Gr-VTA"/>
+                                            <constraint firstItem="zpa-95-hVp" firstAttribute="leading" secondItem="BhN-X4-vXu" secondAttribute="leading" id="DK3-hT-gKP"/>
+                                            <constraint firstAttribute="bottom" secondItem="zpa-95-hVp" secondAttribute="bottom" id="gaq-Dx-TbB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zj2-An-P7E">
+                                        <rect key="frame" x="0.0" y="433.5" width="335" height="124.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wolf4" translatesAutoresizingMaskIntoConstraints="NO" id="iHx-m6-lc4">
+                                                <rect key="frame" x="86" y="0.0" width="249" height="124.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="iHx-m6-lc4" secondAttribute="height" multiplier="300:150" id="DP0-Ly-QOA"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="iHx-m6-lc4" secondAttribute="bottom" id="3Xy-Af-vIb"/>
+                                            <constraint firstItem="iHx-m6-lc4" firstAttribute="top" secondItem="zj2-An-P7E" secondAttribute="top" id="Yh5-xX-61V"/>
+                                            <constraint firstAttribute="trailing" secondItem="iHx-m6-lc4" secondAttribute="trailing" id="lzf-Fw-cRl"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yhs-qO-jNt" firstAttribute="bottom" secondItem="70r-HI-nax" secondAttribute="bottom" constant="20" id="9U2-7V-CGA"/>
+                            <constraint firstItem="70r-HI-nax" firstAttribute="top" secondItem="yhs-qO-jNt" secondAttribute="top" constant="20" id="C0o-b7-Pbi"/>
+                            <constraint firstItem="yhs-qO-jNt" firstAttribute="trailing" secondItem="70r-HI-nax" secondAttribute="trailing" constant="20" id="C6T-76-NyN"/>
+                            <constraint firstItem="yhs-qO-jNt" firstAttribute="trailing" secondItem="Shu-ke-rjK" secondAttribute="trailing" id="EHj-Av-931"/>
+                            <constraint firstItem="yhs-qO-jNt" firstAttribute="bottom" secondItem="Shu-ke-rjK" secondAttribute="bottom" id="EXX-UI-5AL"/>
+                            <constraint firstItem="Shu-ke-rjK" firstAttribute="top" secondItem="yhs-qO-jNt" secondAttribute="top" id="WgU-r6-0cg"/>
+                            <constraint firstItem="70r-HI-nax" firstAttribute="leading" secondItem="yhs-qO-jNt" secondAttribute="leading" constant="20" id="a3u-6q-l0S"/>
+                            <constraint firstItem="Shu-ke-rjK" firstAttribute="leading" secondItem="3M5-gH-hgO" secondAttribute="leading" id="xIz-JJ-Gvm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yhs-qO-jNt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Photo" image="icons8-image" id="IrT-Kv-p77"/>
+                    <connections>
+                        <outletCollection property="imagesWolf" destination="XuF-ZT-nd0" collectionClass="NSMutableArray" id="AJp-Ks-lq2"/>
+                        <outletCollection property="imagesWolf" destination="7RW-J4-Wux" collectionClass="NSMutableArray" id="F3s-eo-mOY"/>
+                        <outletCollection property="imagesWolf" destination="zpa-95-hVp" collectionClass="NSMutableArray" id="hMd-ow-BON"/>
+                        <outletCollection property="imagesWolf" destination="iHx-m6-lc4" collectionClass="NSMutableArray" id="g7S-0V-7zY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCG-tY-T9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="886.50674662668678"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Mnf-hr-Dqu">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="OSw-KZ-kvo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cP7-ss-NeJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="sp2-c5-knH"/>
+                        <segue destination="Vi8-to-hKX" kind="relationship" relationship="viewControllers" id="7Io-Ob-sJC"/>
+                        <segue destination="lOu-9j-giA" kind="relationship" relationship="viewControllers" id="0Cd-Pb-XSP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjN-3W-ldh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Animals" width="375" height="667"/>
+        <image name="icons8-image" width="40" height="40"/>
+        <image name="icons8-tails" width="40" height="40"/>
+        <image name="icons8-werewolf_filled" width="33" height="33"/>
+        <image name="wolf" width="278" height="327"/>
+        <image name="wolf1" width="240" height="120"/>
+        <image name="wolf2" width="240" height="120"/>
+        <image name="wolf3" width="240" height="120"/>
+        <image name="wolf4" width="240" height="120"/>
+    </resources>
 </document>

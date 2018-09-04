@@ -12,6 +12,7 @@
 		95A33480213AA98600F2704B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A3347E213AA98600F2704B /* Main.storyboard */; };
 		95A33482213AA98800F2704B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95A33481213AA98800F2704B /* Assets.xcassets */; };
 		95A33485213AA98800F2704B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95A33483213AA98800F2704B /* LaunchScreen.storyboard */; };
+		95BB30DF213ADD1C00DC5E6F /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB30DE213ADD1C00DC5E6F /* ImagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		95A33481213AA98800F2704B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95A33484213AA98800F2704B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95A33486213AA98800F2704B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BB30DE213ADD1C00DC5E6F /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				95A3347A213AA98600F2704B /* AppDelegate.swift */,
 				95A3347C213AA98600F2704B /* ViewController.swift */,
 				95A3347E213AA98600F2704B /* Main.storyboard */,
+				95BB30DE213ADD1C00DC5E6F /* ImagesViewController.swift */,
 				95A33481213AA98800F2704B /* Assets.xcassets */,
 				95A33483213AA98800F2704B /* LaunchScreen.storyboard */,
 				95A33486213AA98800F2704B /* Info.plist */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BB30DF213ADD1C00DC5E6F /* ImagesViewController.swift in Sources */,
 				95A3347D213AA98600F2704B /* ViewController.swift in Sources */,
 				95A3347B213AA98600F2704B /* AppDelegate.swift in Sources */,
 			);
